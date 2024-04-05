@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./components/video-card/video-card.js" type="module"></script>
+    <script src="./services/formats/formatDate.js" type="module"></script>
+    <script
+      src="./services/formats/formatNumberOfViews.js"
+      type="module"
+    ></script>
+    <script src="./services/filters/videosFilterByTitle.js"></script>
+    <script src="./components/category-checkbox/category-checkbox.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <img src="assets/img/youtube-logo.png" alt="Logo Youtube" />
+        <h1>YouTube</h1>
+        <input
+          type="text"
+          id="search"
+          placeholder="Rechercher..."
+          oninput="videosFilterByTitle()"
+        />
+      </div>
+    </nav>
+    <category-checkbox></category-checkbox>
+    <main>
+      <section>
+        <video-card></video-card>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div>
+        <p>&copy; 2024 YouTube</p>
+      </div>
+    </footer>
+  </body>
+</html>
