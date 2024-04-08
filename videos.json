@@ -4,55 +4,79 @@
     "img": "assets/img/screenshot.png",
     "views": 2000000,
     "date": "2024-04-05T10:01:59",
-    "category": "Music"
+    "category": {
+      "id": 4,
+      "name": "Music"
+    }
   },
   {
     "title": "Video 2",
     "img": "assets/img/screenshot.png",
     "views": 3000000000,
     "date": "2019-04-01T15:00:00",
-    "category": "Sport"
+    "category": {
+      "id": 5,
+      "name": "Sport"
+    }
   },
   {
     "title": "Video 3",
     "img": "assets/img/screenshot.png",
     "views": 111222452,
     "date": "2022-07-15T15:00:00",
-    "category": "Serie"
+    "category": {
+      "id": 4,
+      "name": "Serie"
+    }
   },
   {
     "title": "Video 4",
     "img": "assets/img/screenshot.png",
     "views": 200,
     "date": "2023-04-01T15:00:00",
-    "category": "Film"
+    "category": {
+      "id": 2,
+      "name": "Film"
+    }
   },
   {
     "title": "Video 5",
     "img": "assets/img/screenshot.png",
     "views": 12600000,
     "date": "2023-08-01T15:00:00",
-    "category": "Music"
+    "category": {
+      "id": 4,
+      "name": "Music"
+    }
   },
   {
     "title": "Video 6",
     "img": "assets/img/screenshot.png",
     "views": 333333,
     "date": "2022-04-01T15:00:00",
-    "category": "Game"
+    "category": {
+      "id": 1,
+      "name": "Game"
+    }
   },
   {
     "title": "Video 7",
     "img": "assets/img/screenshot.png",
     "views": 2212154126,
     "date": "2018-04-01T15:00:00",
-    "category": "Game"
+    "category": {
+      "id": 1,
+      "name": "Game"
+    }
   },
   {
     "title": "Video 8",
     "img": "assets/img/screenshot.png",
     "views": 100000000,
     "date": "2023-06-01T15:00:00",
-    "category": "Film"
+    "category": {
+      "id": 2,
+      "name": "Film"
+    }
   }
 ]

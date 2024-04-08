@@ -1,5 +1,5 @@
-import { formatDate } from "../../services/formats/formatDate.js";
-import { formatNumberOfViews } from "../../services/formats/formatNumberOfViews.js";
+import { formatDate } from "../../modules/formats/formatDate.js";
+import { formatNumberOfViews } from "../../modules/formats/formatNumberOfViews.js";
 
 class VideoCard extends HTMLElement {
   constructor() {
@@ -30,18 +30,22 @@ class VideoCard extends HTMLElement {
 
   displayVideos(data) {
     const videoCardContainer = this.querySelector("#video-card-container");
+
     for (let i = 0; i < data.length; i++) {
       const currentVideo = data[i];
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.dataset.category = currentVideo.category.name.toLowerCase();
 
-      videoCardContainer.innerHTML += `
-        <div class="card">
-          <img src="${currentVideo.img}" alt="image miniaturisée de la vidéo">
-          <h2>${currentVideo.title}</h2>
-          <p>${formatNumberOfViews(
-            currentVideo.views
-          )} vues ¤ Il y a ${formatDate(currentVideo.date)}</p>
-        </div>
-      `;
+      card.innerHTML = `
+            <img src="${currentVideo.img}" alt="image miniaturisée de la vidéo">
+            <h2>${currentVideo.title}</h2>
+            <p>${formatNumberOfViews(
+              currentVideo.views
+            )} vues ¤ Il y a ${formatDate(currentVideo.date)}</p>
+        `;
+
+      videoCardContainer.appendChild(card);
     }
   }
 }
