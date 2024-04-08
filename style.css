@@ -64,6 +64,29 @@ main {
   color: #606060;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  line-height: normal;
+  cursor: pointer;
+  padding: 3px 14px;
+  margin: 0 10px 10px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] + label:hover {
+  background-color: grey;
+  color: black;
+}
+input[type="checkbox"]:checked + label {
+  background-color: black;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: calc(50% - 20px);
